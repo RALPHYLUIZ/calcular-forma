@@ -5,7 +5,7 @@ let resultado;
 
 
 
-function calculadora(){
+function FORMA(){
 
     numero = document.querySelector('#slcNumero').value;
 
@@ -83,27 +83,22 @@ let select = document.querySelector('#slcOperador');
 
 
 select.addEventListener('change',function(){
-    //alert('TESTE 123');
 
 
     let imgOperacao = document.querySelector('#imgOperacao');
     let op = select.options[select.selectedIndex].value;
 
-    if(op == '+'){
-    imgOperacao.setAttribute('src', 'img/adicionar.png');
+    if(forma > = 3){
+    imgOperacao.setAttribute('src', 'equilatero.png');
     }
 
     if(op == '-'){
-        imgOperacao.setAttribute('src', 'img/subtracao.png');
+        imgOperacao.setAttribute('src', 'escaleno.png');
         }
 
         if(op == '*'){
-            imgOperacao.setAttribute('src', 'img/multiplicacao.png');
+            imgOperacao.setAttribute('src', 'isosceles.png');
             }
-
-            if(op == '/'){
-                imgOperacao.setAttribute('src', 'img/divisao.png');
-                }
 });
 
 //FUNÇÃO DE LIMPAR FURMULÁRIO
